@@ -66,13 +66,14 @@ export function MapMarkerTooltip({
             closeButton: false,
             closeOnClick: false,
             className: "map-tooltip",
-          }).setHTML(
-            `<strong>${m.title}</strong>${m.subtitle ? `<span>${m.subtitle}</span>` : ""}`,
-          );
+          })
+            .setLngLat([m.lng, m.lat])
+            .setHTML(
+              `<strong>${m.title}</strong>${m.subtitle ? `<span>${m.subtitle}</span>` : ""}`,
+            );
 
           new maplibregl.Marker({ element: el })
             .setLngLat([m.lng, m.lat])
-            .setPopup(popup)
             .addTo(map);
 
           el.addEventListener("mouseenter", () => popup.addTo(map!));
