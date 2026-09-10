@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/site/header";
 import {
   Contact,
   FeaturedProject,
+  ServiceArea,
   Hero,
   Process,
   Services,
