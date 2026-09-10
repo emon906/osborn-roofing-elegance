@@ -60,6 +60,7 @@ function Index() {
         <WhyChooseUs />
         <Testimonials />
         <Process />
+        <ServiceArea />
         <Contact />
       </main>
       <SiteFooter />
