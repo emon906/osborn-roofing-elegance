@@ -8,6 +8,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { Cta } from "@/components/site/cta";
+import { MapMarkerTooltip } from "@/components/ui/map-marker-tooltip";
 import { CONTACT, PROCESS, SERVICES, TESTIMONIALS } from "@/components/site/data";
 import { Reveal } from "@/components/site/reveal";
 import { ExpandingCards } from "@/components/ui/expanding-cards";
