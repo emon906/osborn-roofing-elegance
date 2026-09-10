@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/site/header";
 import {
   Contact,
   FeaturedProject,
+  ServiceArea,
   Hero,
   Process,
   Services,
@@ -59,6 +60,7 @@ function Index() {
         <WhyChooseUs />
         <Testimonials />
         <Process />
+        <ServiceArea />
         <Contact />
       </main>
       <SiteFooter />

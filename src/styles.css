@@ -160,3 +160,49 @@
 @utility animate-slow-zoom {
   animation: slow-zoom 14s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
+
+/* MapLibre marker + tooltip */
+.map-marker {
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: var(--offwhite);
+  border: 3px solid var(--charcoal);
+  box-shadow:
+    0 0 0 1px oklch(1 0 0 / 35%),
+    0 6px 18px oklch(0 0 0 / 0.6);
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+.map-marker:hover {
+  transform: scale(1.25);
+}
+
+.map-tooltip .maplibregl-popup-content {
+  background: oklch(0.17 0.003 250 / 0.95);
+  color: var(--offwhite);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 10px 14px;
+  font-family: var(--font-sans);
+  box-shadow: var(--shadow-lift);
+  backdrop-filter: blur(6px);
+}
+.map-tooltip .maplibregl-popup-content strong {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+.map-tooltip .maplibregl-popup-content span {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--steel);
+}
+.map-tooltip .maplibregl-popup-tip {
+  border-top-color: oklch(0.17 0.003 250 / 0.95);
+}

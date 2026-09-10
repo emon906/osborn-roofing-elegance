@@ -12,4 +12,11 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    optimizeDeps: {
+      // maplibre-gl v6 loads its worker as a sibling module; dep-optimizing it
+      // drops the worker chunk, so serve it from source instead.
+      exclude: ["maplibre-gl"],
+    },
+  },
 });

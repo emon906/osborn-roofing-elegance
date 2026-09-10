@@ -8,6 +8,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { Cta } from "@/components/site/cta";
+import { MapMarkerTooltip } from "@/components/ui/map-marker-tooltip";
 import { CONTACT, PROCESS, SERVICES, TESTIMONIALS } from "@/components/site/data";
 import { Reveal } from "@/components/site/reveal";
 import { ExpandingCards } from "@/components/ui/expanding-cards";
@@ -268,6 +269,38 @@ export function Process() {
             </Reveal>
           ))}
         </ol>
+      </div>
+    </section>
+  );
+}
+
+// Busselton, WA town centre
+const BUSSELTON_COORDS: [number, number] = [115.3456, -33.6555];
+
+export function ServiceArea() {
+  return (
+    <section id="area" className="border-t border-border py-24 md:py-32">
+      <div className="mx-auto max-w-7xl px-5 md:px-10">
+        <SectionHead
+          eyebrow="Service Area"
+          title="Serving Busselton & Surrounding Areas."
+          copy="Based in Busselton and working across the South West — Dunsborough, Vasse, Yallingup, Margaret River, Bunbury and everywhere between."
+        />
+        <Reveal delay={140} className="mt-14">
+          <MapMarkerTooltip
+            center={BUSSELTON_COORDS}
+            zoom={8.5}
+            markers={[
+              {
+                lng: BUSSELTON_COORDS[0],
+                lat: BUSSELTON_COORDS[1],
+                title: "Osborn Roofing WA Pty Ltd",
+                subtitle: "Busselton, WA",
+              },
+            ]}
+            className="h-[420px] w-full md:h-[520px]"
+          />
+        </Reveal>
       </div>
     </section>
   );
