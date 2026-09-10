@@ -13,12 +13,13 @@ import { Reveal } from "@/components/site/reveal";
 import { ExpandingCards } from "@/components/ui/expanding-cards";
 import { Marquee03 } from "@/components/ui/marquee-03";
 
-const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1595877244574-e90ce41ce089?auto=format&fit=crop&w=2400&q=80";
-const PROJECT_IMAGE =
-  "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2400&q=80";
-const PROJECT_DETAIL =
-  "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80";
+import heroImage from "@/assets/hero-roof.jpg";
+import projectHero from "@/assets/project-hero.jpg";
+import projectDetail from "@/assets/project-detail.jpg";
+
+const HERO_IMAGE = heroImage;
+const PROJECT_IMAGE = projectHero;
+const PROJECT_DETAIL = projectDetail;
 
 function SectionHead({
   eyebrow,

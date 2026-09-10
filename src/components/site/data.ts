@@ -1,5 +1,10 @@
 import type { ExpandingCardItem } from "@/components/ui/expanding-cards";
 import type { MarqueeTestimonial } from "@/components/ui/marquee-03";
+import serviceRestoration from "@/assets/service-restoration.jpg";
+import serviceRepairs from "@/assets/service-repairs.jpg";
+import serviceReplacement from "@/assets/service-replacement.jpg";
+import serviceGuttering from "@/assets/service-guttering.jpg";
+import serviceMetal from "@/assets/service-metal.jpg";
 
 export const CONTACT = {
   business: "Osborn Roofing WA Pty Ltd",
