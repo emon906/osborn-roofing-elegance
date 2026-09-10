@@ -1,5 +1,10 @@
 import type { ExpandingCardItem } from "@/components/ui/expanding-cards";
 import type { MarqueeTestimonial } from "@/components/ui/marquee-03";
+import serviceRestoration from "@/assets/service-restoration.jpg";
+import serviceRepairs from "@/assets/service-repairs.jpg";
+import serviceReplacement from "@/assets/service-replacement.jpg";
+import serviceGuttering from "@/assets/service-guttering.jpg";
+import serviceMetal from "@/assets/service-metal.jpg";
 
 export const CONTACT = {
   business: "Osborn Roofing WA Pty Ltd",
@@ -15,8 +20,7 @@ export const SERVICES: ExpandingCardItem[] = [
     title: "Roof Restoration",
     description:
       "Full restoration of tiled and metal roofs — high-pressure clean, re-bedding and re-pointing of ridge caps, then a premium protective coating system built for South West conditions.",
-    image:
-      "https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=1600&q=80",
+    image: serviceRestoration,
     points: ["Re-bed & re-point", "Pressure clean & seal", "Colour-matched coatings"],
   },
   {
@@ -24,8 +28,7 @@ export const SERVICES: ExpandingCardItem[] = [
     title: "Roof Repairs",
     description:
       "Fast, precise leak detection and repair. Cracked tiles, failed flashings, rusted valleys and storm damage — diagnosed properly and fixed once.",
-    image:
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=80",
+    image: serviceRepairs,
     points: ["Leak diagnosis", "Flashing & valley work", "Storm damage response"],
   },
   {
@@ -33,8 +36,7 @@ export const SERVICES: ExpandingCardItem[] = [
     title: "Roof Replacement",
     description:
       "Complete re-roofs managed end to end, from tear-off and sarking through to insulation, new sheeting and final detailing — with your home kept watertight throughout.",
-    image:
-      "https://images.unsplash.com/photo-1621873495884-845a939892d4?auto=format&fit=crop&w=1600&q=80",
+    image: serviceReplacement,
     points: ["Tile to metal conversions", "Sarking & insulation", "Full site management"],
   },
   {
@@ -42,8 +44,7 @@ export const SERVICES: ExpandingCardItem[] = [
     title: "Guttering & Fascia",
     description:
       "New gutters, downpipes, fascia and leaf protection, set out for correct fall so heavy winter rain moves away from your home rather than into it.",
-    image:
-      "https://images.unsplash.com/photo-1591588582259-e675bd2e6088?auto=format&fit=crop&w=1600&q=80",
+    image: serviceGuttering,
     points: ["Colorbond guttering", "Downpipes & rainheads", "Leaf guard systems"],
   },
   {
@@ -51,8 +52,7 @@ export const SERVICES: ExpandingCardItem[] = [
     title: "Metal Roofing",
     description:
       "Architectural Colorbond and standing-seam metal roofing for new builds, extensions and coastal properties — engineered for wind, salt air and long service life.",
-    image:
-      "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?auto=format&fit=crop&w=1600&q=80",
+    image: serviceMetal,
     points: ["Colorbond & Zincalume", "Standing seam profiles", "Coastal-grade fixings"],
   },
 ];
